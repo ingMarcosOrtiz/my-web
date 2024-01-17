@@ -26,7 +26,7 @@ export default function HomePage() {
         </Link>
 
         <p className='text-sm font-mono text-gray-500 text-center mt-3'>
-          Próximamente www.ingmarcos.com
+          Próximamente www.ingmarcosortiz.com
         </p>
         <code className='text-sm font-mono text-gray-500 text-center mt-3'>
           sitio web actualmente en desarrollo...👨‍💻
