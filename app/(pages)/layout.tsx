@@ -17,6 +17,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang='es'>
+      <script
+        src='https://platform.linkedin.com/badges/js/profile.js'
+        async
+        defer
+        type='text/javascript'></script>
       <body className={inter.className}>
         <ContainerHome>{children}</ContainerHome>
       </body>
