@@ -32,20 +32,7 @@ export default function HomePage() {
           sitio web actualmente en desarrollo...👨‍💻
         </code>
 
-        {/* <div
-          className='badge-base LI-profile-badge'
-          data-locale='es_ES'
-          data-size='large'
-          data-theme='dark'
-          data-type='VERTICAL'
-          data-vanity='marcos-ortiz'
-          data-version='v1'>
-          <a
-            className='badge-base__link LI-simple-link'
-            href='https://co.linkedin.com/in/marcos-ortiz?trk=profile-badge'>
-            Marcos Ortiz
-          </a>
-        </div> */}
+        {/* Marcos Ortiz */}
       </div>
     </>
   )
