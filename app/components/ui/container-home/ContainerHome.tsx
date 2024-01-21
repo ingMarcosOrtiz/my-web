@@ -2,7 +2,7 @@ import React from 'react'
 
 export function ContainerHome({ children }: { children: React.ReactNode }) {
   return (
-    <main className='max-w-screen-lg mx-auto py-3 px-3 md:py-8'>
+    <main className='max-w-screen-lg mx-auto my-4  border-primary	border rounded-md'>
       {children}
     </main>
   )

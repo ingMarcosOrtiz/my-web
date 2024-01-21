@@ -1,9 +1,8 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import '../globals.css'
-import { ContainerHome } from '../components'
 
-const inter = Inter({ subsets: ['latin'] })
+import '../globals.css'
+import { ContainerHome, Header } from '../components'
+import { poppins } from '../config/fonts'
 
 export const metadata: Metadata = {
   title: 'Desarrollador web - Marcos Ortiz',
@@ -22,8 +21,11 @@ export default function RootLayout({
         async
         defer
         type='text/javascript'></script>
-      <body className={inter.className}>
-        <ContainerHome>{children}</ContainerHome>
+      <body className={`${poppins.className} `}>
+        {/* <ContainerHome> */}
+        {/* <Header /> */}
+        {children}
+        {/* </ContainerHome> */}
       </body>
     </html>
   )
