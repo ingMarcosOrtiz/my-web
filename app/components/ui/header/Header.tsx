@@ -1,30 +1,32 @@
+'use client'
 import React from 'react'
+import { useUIStore } from '@/app/store-zustand'
+import Link from 'next/link'
 
 export function Header() {
-  const menuItems = [
-    'Inicio',
-    'Sobre mí',
-    'Servicios',
-    'Portafolio',
-    'Blog',
-    'Contacto',
-  ]
+  const handleToggleClickUIStore = useUIStore(
+    (state) => state.handleToggleClick
+  )
+  const isActiveUIStore = useUIStore((state) => state.isActive)
+
   return (
     <>
-      <nav className=' p-4 w-full flex flex-row justify-between items-center'>
-        <span className='text-3xl font-bold'>
-          Mar<span className='text-primary'>cos</span>
-        </span>
-        <ul className='flex space-x-4'>
-          {menuItems.map((item, index) => (
-            <li key={index}>
-              <a href='#' className=' hover:text-primary'>
-                {item}
-              </a>
-            </li>
-          ))}
-        </ul>
-      </nav>
+      <header>
+        <Link href='/' className='logo'>
+          Mar<span>cos</span>
+        </Link>
+        <div className={`toggle ${isActiveUIStore ? 'active' : ''}`}>
+          <button
+            onClick={handleToggleClickUIStore}
+            className={`hamburguer_wrapper ${isActiveUIStore ? 'active' : ''}`}>
+            <div className='hamburguer_icon'>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </button>
+        </div>
+      </header>
     </>
   )
 }

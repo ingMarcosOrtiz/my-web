@@ -1,2 +1,5 @@
 export * from './ui/container-home/ContainerHome'
 export * from './ui/header/Header'
+export * from './ui/layout/Layout'
+export * from './ui/menu/Menu'
+export * from './ui/footer/Footer'
