@@ -1,7 +1,8 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import '../globals.css'
 import { ContainerHome } from '../components'
+import { GoogleTagManager } from '@next/third-parties/google'
+import '../globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -22,6 +23,8 @@ export default function RootLayout({
         async
         defer
         type='text/javascript'></script>
+      <GoogleTagManager gtmId='G-1F128NP4FJ' />
+
       <body className={inter.className}>
         <ContainerHome>{children}</ContainerHome>
       </body>

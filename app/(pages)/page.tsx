@@ -20,7 +20,7 @@ export default function HomePage() {
         </h2>
         <Link
           target='_blank'
-          className='text-sm text-dark-font-color font-bold text-primary'
+          className='text-sm text-dark-font-color font-bold text-primary hover:underline'
           href={'https://www.linkedin.com/in/marcos-ortiz/'}>
           https://www.linkedin.com/in/marcos-ortiz/
         </Link>
@@ -31,6 +31,20 @@ export default function HomePage() {
         <code className='text-sm font-mono text-gray-500 text-center mt-3'>
           sitio web actualmente en desarrollo...👨‍💻
         </code>
+
+        <Link
+          target='_blank'
+          className='text-sm text-gray-500 font-mono  flex items-center gap-1 mt-3 hover:underline'
+          href={'https://github.com/ingMarcosOrtiz'}>
+          <Image
+            loading='lazy'
+            width={20}
+            height={20}
+            src={images.github}
+            alt='logo-Valparaiso'
+          />
+          Ver Portafolio...
+        </Link>
 
         {/* <div
           className='badge-base LI-profile-badge'
